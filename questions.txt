@@ -1,0 +1,10 @@
+Q: #Je 1 > 2?
+Q: #Dopln pi na 2 desatnine miesta.
+Q: #Dopln chybajuce cislo v rade 1, 2, 3, ?, 8, 12.
+Q: #Aku vlnovu dlzku ma modra farba? A)380nm-430nm;B)430nm-520nm; C)320nm-420nm; D)1m-1km; E)380nm-530nm
+Q: #Aku hodnotu ma Avogadrova konstanta?
+Q: #Aku hodnotu ma naboj elektronu?
+Q: #Ake napatie sa nachadza na rezistore? R=100 Ohm; I=10 mA
+Q: #Aka hodnota bude v premennej x? int x; 	x = 41.0e0 / 82.0;
+Q: #Aku hodnotu bude mat premenna x? int x; 	x = 16.0E-0 / 32.0;
+Q: #Preved dvojkove cislo 10100101 o desiatkovej sustavy.
