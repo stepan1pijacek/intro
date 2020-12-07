@@ -93,11 +93,11 @@ char* loadAnswears(const char* filenameOfAnswears) {
 }
 
 /*Hlavni funkce celeho readingFiles*/
-int findQuestion(int index, char* answear) {
+int findQuestion(int index, const char* answear) {
 	system("clr");
 	char* stringQuestions = loadQuestions("questions.txt");
 	char* stringAnswears = loadAnswears("answears.txt");
-
+	int succes = 0;
 	LIST* headQuest = NULL;
 	ListOfAnswears* headAns = NULL;
 	
@@ -105,9 +105,12 @@ int findQuestion(int index, char* answear) {
 	
 	if (strstr(answear, GetNthAnswears(headAns, index))) {
 		printf_s("Spravna odpoved! Postupujete dale");
+		succes = 1;
 	}
 	else {
 		printf_s("Nespravna odpoved! zkuste to znovu");
 	}
 	
+
+	return succes;
 }

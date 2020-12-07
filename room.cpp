@@ -1,7 +1,8 @@
 # include <stdio.h>
 #include <stdlib.h>
-#include<time.h> 
-#include<conio.h> 
+#include <time.h> 
+#include <conio.h> 
+#include "readingFile.h"
 
 
 char mapa[10][18] =
@@ -72,6 +73,7 @@ int room(char z_postavy, int c_player)
 
     char question = mapa[n+6][n+4] = { '?' };
     int rngQuestion = rand() % (15 + 1 - 0) + 0;
+    const char* answear = "Ne";
 
     /*Vyplnenie mapy*/
     for (i = 0; i < 10; i++)
@@ -120,6 +122,7 @@ int room(char z_postavy, int c_player)
          {
              mapa[yp_pozicia][xp_pozicia] = '.';
              player = mapa[yp_pozicia - 1][xp_pozicia] = z_postavy;
+             //findQuestion(rngQuestion, answear);
              (*y_ptr)--;
          }
          break;
@@ -166,13 +169,9 @@ int room(char z_postavy, int c_player)
      }
 
 
-     if (mapa[yp_pozicia][xp_pozicia] == '?') {
-         printf_s("Gode give me sign");
-     }
-     else
-     {
-         system("cls");
-     }
+     
+      system("cls");
+     
      
      
     } while (mapa[yp_pozicia][xp_pozicia] != mapa[n + 6][n + 4]);

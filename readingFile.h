@@ -12,3 +12,5 @@ struct listOfAnswears
 	struct listOfAnswears* next;
 };
 typedef struct listOfAnswears ListOfAnswears;
+
+int findQuestion(int index, const char* answear);
